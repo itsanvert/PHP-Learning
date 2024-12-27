@@ -121,17 +121,36 @@
     foreach($second as $val){
         echo "$val <br/>";
     }
-    echo "<br/>=======================Array slice===================<br/>";
-    $first = array("a","b","c","d") ;
-    $second = array_slice($first,2,3) ;
-    foreach($second as $val){
-        echo "$val <br/>";
-    }
+
     echo "<br/>=======================Sort Array===============<br/>";
     $s_arry = array("Bayon","Taprom","Angkor","Prash Vihear") ;
-    sort($s_arry);
+    rsort($s_arry);
     foreach($s_arry as $val){
         echo "$val <br/>";
+    }
+    echo "<br/>=======================Sort associate Array = asort- sort value ===============<br/>";
+    echo "<br/>=======================Sort associate Array = arsort- sort reverse value ===============<br/>";
+    $product = array("cocaloca" =>3,"Pepsi" =>2 ,"Fanta" => 1) ;
+    echo "<br/> An Assciative Array before use asort<br/>";
+    foreach($product as $key=>$val){
+        echo "$key=$val <br/>";
+    }
+    asort($product);
+    echo "<br/> an associative Array after use asort<br/>";
+    foreach($product as $key=>$val){
+        echo "$key = $val <br/>";
+    }
+    echo "<br/>=======================KSort associate Array ksort- sort key ===============<br/>";
+    echo "<br/>=======================KSort associate Array krsort- sort reverse key ===============<br/>";
+    $k_product = array("Cocaloca" =>3,"Pepsi" =>2 ,"Fanta" => 1) ;
+    echo "<br/> An Assciative Array before use ksort<br/>";
+    foreach($k_product as $key=>$val){
+        echo "$key = $val <br/>";
+    }
+    ksort($k_product) ;
+    echo "<br/> an associative Array after use ksort<br/>";
+    foreach($k_product as $key=>$val){
+        echo "$key = $val <br/>";
     }
     ?>
 
