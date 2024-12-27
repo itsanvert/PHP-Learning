@@ -29,9 +29,9 @@
     $testing = 5.0;
     echo gettype($testing);// Double
     echo "</br>";
-    $testing = true;
+    $testing = true;                
     echo gettype($testing);//Bollean
-    echo "</br>";
+echo "</br>";
 
 // Week 2 : Gettype() and Var_dump()
     $name="Vert";
