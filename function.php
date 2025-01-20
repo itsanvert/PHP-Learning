@@ -32,7 +32,7 @@
             $str = $str. "$i +";
             
         }
-        echo "</br>";
+         echo "</br>";
         echo substr($str,0,-1)." = $sum";
     }
     bigsum();

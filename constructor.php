@@ -1,8 +1,8 @@
 <?php
 class Person {
-    var $name;
-    var $pid;
-    var $personStr;
+    private $name;
+    private $pid;
+    public $personStr;
     function __construct($name = "Vert", $pid = 0) {
         $this ->name = $name;
         $this ->pid = $pid;
@@ -17,13 +17,10 @@ function getname () {
      }
     }
     // $person = new Person("Darya");
-    // echo $person->getName () ."";
+    // echo $person->getNamte () ."";
     $person = new Person("Sophea",168);
     $person->setName("Vert");
     echo $person->personStr;
+    echo "<br/>";
     
-
-
-
-
 ?>
