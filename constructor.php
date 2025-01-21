@@ -29,5 +29,5 @@ class Person
 $person = new Person("Sophea", 168);
 // $person->setName("Vert");
 // echo $person->personStr;
-echo $person->makePersonStr("Vert123", 123);
+echo $person->makePersonStr("Vert123", 123); // use Function of MakepersonStr
 echo "<br/>";
