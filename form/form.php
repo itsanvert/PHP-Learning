@@ -11,7 +11,7 @@
     <center>
         <h2>Regisration Form</h2>
         <hr width=50%>
-        <form method="GET" action="./register.php">
+        <form method="POST" action="./register.php">
             <table>
                 <tr>
                     <td>First-Name</td>
@@ -39,7 +39,7 @@
                         </select>
 
 
-                        <select name="cobYear">
+                        <select name="cboYear">
                             <option value="1990">1990</option>
                             <option value="1991">1991</option>
                             <option value="1992">1992</option>
